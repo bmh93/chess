@@ -1,0 +1,330 @@
+*{-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+html {
+  background-color: #F5F1E8;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+font-family: 'Lato', sans-serif;
+}
+.container {
+/*  padding-left: 15px;
+  padding-right: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 25px #908d8c, -10px -10px 25px #908d8c;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+}
+
+/*************************/
+.landding {
+  text-align: center;
+}
+.landding .container {
+  height: 525px;
+  background-image: linear-gradient(31deg, black, gray);
+}
+.landding .container .menu {
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.landding .container .menu p{
+     margin: 0;
+    padding-right: 10px;
+    padding-left: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+.landding .container .menu p:before{
+  content: " ";
+    width: 36%;
+    height: 1px;
+    background-color: #948e8e;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    z-index: -1;
+}
+.landding .container .menu i:after{
+  content: " ";
+    width: 36%;
+    height: 1px;
+    background-color: #948e8e;
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    z-index: -1;
+}
+.landding .container .menu i {
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+      background-color: #606060;
+
+}
+.landding .container .text{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.landding .container .text:before,
+.landding .container .text:after
+{
+    content: " ";
+    width: 68%;
+    height: 186px;
+    position: absolute;
+    top: 17%;
+    border: 1px solid #948e8e;
+    border-bottom: none;
+    background-color: transparent;
+}
+.landding .container .text:before{
+  right: 250px;
+  border-right: none;
+}
+.landding .container .text:after{
+    left: 250px;
+    border-left: none;
+}
+
+.landding .container .text h1 {
+  margin: 0;
+  color: white;
+}
+
+.landding .container .text h6{
+    margin: 0;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+
+}
+button{
+  background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+.landding .container .image {
+  position: relative;
+}
+.landding .container .image img {
+  max-width: 100%;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%);
+}
+
+
+/**********************/
+.section {
+    text-align: center;
+    position: relative;
+}
+.section .container{
+  padding-top: 80px;
+   padding-bottom: 40px;
+    background-color: white;
+}
+.section .container .text {
+  width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.section .container .text p{
+  /*margin: 15px 20px;*/
+  margin-bottom: 0;
+}
+.section .container .text h1{
+   margin: 0 auto;
+  text-transform: uppercase;
+  width: 160px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+
+}
+.section .container .text p:first-child {
+  text-transform: uppercase;
+
+}
+
+.section .container img {
+  width: initial;
+}
+/******************/
+.chess {
+
+}
+.chess .container {
+
+}
+.chess .container .boxs {
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+.chess .container .boxs .box{
+  background: #242424;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid #353232;
+}
+.chess .container .boxs .box img{
+  width: 32%;
+  padding-top: 20px;
+}
+.chess .container .boxs .box .text{
+  padding: 20px 0;
+}
+.chess .container .boxs .box .text h2{
+font-size: xx-large;
+    width: 91px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.chess .container .boxs .box .text h2 span{
+  font-size: large;
+  font-weight: 200;
+}
+.chess .container .boxs .box .text p{
+  padding-top: 0;
+    margin-top: 5px;
+    margin-right: 18px;
+}
+.chess .container .boxs .box .text h6{
+  margin-top: 30px;
+    margin-bottom: 0;
+    color: red;
+    text-transform: uppercase;
+}
+/****************************/
+.chessboard {
+
+}
+.chessboard .container {
+  background: white;
+}
+.chessboard .container .content {
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  align-items: center;
+  column-gap: 10px;
+  padding-top: 40px;
+    padding-bottom: 40px;
+}
+.chessboard .container .content .text{
+  text-align: center;
+  padding: 20px 69px;
+}
+.chessboard .container .content .text p{
+margin-bottom: 20px;
+}
+.chessboard .container .content .text h6{
+  margin: 0;
+  text-transform: uppercase;
+}
+.chessboard .container .content .text h1{
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.chessboard .container .content .image {
+  width: 100%;
+  text-align: center;
+}
+.chessboard .container .content .image img{
+width: 374px;
+}
+/*********************/
+
+@media (max-width: 650px) {
+
+.chessboard .container .content .image img{
+width: 302px;
+}
+.chessboard .container .content .text{
+  padding: 20px 10px;
+
+  }
+.chessboard .container .content {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));  align-items: center;
+
+ }
+ .section .container img {
+  width: -webkit-fill-available;
+}
+
+
+
+}
+
+/****************/
+
+@media (max-width: 530px) {
+
+.landding .container {
+  height: 420px; 
+}
+
+}
+
+@media (max-width: 340px) {
+
+.landding .container {
+  height: 385px; 
+}
+
+.landding .container .menu p:before {
+  width: 30%;
+}
+.landding .container .menu i:after {
+  width: 26%;
+  }
+}
+
+@media (max-width: 600px) {
+ .landding .container .text:before,
+.landding .container .text:after
+{
+  display: none;
+}
+.landding .container .menu i:after {
+  width: 30%;
+  }
+  .landding .container .menu p:before {
+  width: 30%;
+}
+}
